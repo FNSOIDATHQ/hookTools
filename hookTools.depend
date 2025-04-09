@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1744189251 source:f:\resources\code\nebulapatch\hooktools\main.cpp
+	"hookTool.h"
+
+1744186087 f:\resources\code\nebulapatch\hooktools\main.h
+	<windows.h>
+	<memoryapi.h>
+	<processthreadsapi.h>
+	<cstdint>
+	<cstring>
+	<string>
+
+1744189273 f:\resources\code\nebulapatch\hooktools\hooktool.h
+	<windows.h>
+	<cstdint>
+

@@ -1,13 +1,9 @@
-#ifndef __MAIN_H__
-#define __MAIN_H__
+#ifndef __HOOKTOOL_H__
+#define __HOOKTOOL_H__
 
 //cpp std library+windows sdk
 #include <windows.h>
-#include <memoryapi.h>
-#include <processthreadsapi.h>
 #include <cstdint>
-#include <cstring>
-#include <string>
 
 #ifdef BUILD_DLL
     #define DLL_EXPORT __declspec(dllexport)
@@ -37,4 +33,4 @@ DLL_EXPORT void hookTrampoline(void*, void*,void**);
 }
 #endif
 
-#endif // __MAIN_H__
+#endif // __HOOKTOOL_H__

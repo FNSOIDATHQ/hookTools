@@ -1,6 +1,4 @@
-#include <main.h>
-
-//============================================hook tool start
+#include "hookTool.h"
 
 //reference:
 //https://kylehalladay.com/blog/2020/11/13/Hooking-By-Example.html
@@ -113,5 +111,3 @@ __declspec(naked) void moveVarToECX(UINT input){
         retn
     }
 }
-
-//============================================hook tool end

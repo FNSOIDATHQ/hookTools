@@ -1,0 +1,8 @@
+EXPORTS
+   hookJMP
+   hookVTable
+   writeVarToAddress
+   writeVarToAddressP
+   getClassFunctionAddress
+   getThisPtrFromECX
+   moveVarToECX

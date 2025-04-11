@@ -3,6 +3,7 @@ EXPORTS
    hookVTable
    writeVarToAddress
    writeVarToAddressP
+   writeNopsToAddress
    getClassFunctionAddress
    getThisPtrFromECX
    moveVarToECX

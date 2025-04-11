@@ -22,6 +22,7 @@ DLL_EXPORT void hookJMP(void*,void*);
 DLL_EXPORT void* hookVTable(void**,size_t,void*);
 DLL_EXPORT void writeVarToAddress(UINT,UINT,void*);
 DLL_EXPORT void writeVarToAddressP(void*,UINT,void*);
+DLL_EXPORT void writeNopsToAddress(UINT,UINT);
 DLL_EXPORT void* getClassFunctionAddress(DWORD*,int);
 DLL_EXPORT UINT getThisPtrFromECX();
 DLL_EXPORT void moveVarToECX(UINT);

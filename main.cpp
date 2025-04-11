@@ -84,6 +84,23 @@ void writeVarToAddressP(void* targetPointer,UINT dataSize,void* input){
     VirtualProtect(targetPointer, dataSize, oldProtectValue, &oldProtectValue);
 }
 
+void writeNopsToAddress(UINT address,UINT dataSize){
+
+    unsigned char* data=new unsigned char[dataSize];
+    for(UINT i=0;i<dataSize;i++){
+        data[i]=0x90;
+    }
+
+    void* targetPointer=(void*)address;
+
+    DWORD oldProtectValue;
+    VirtualProtect(targetPointer, dataSize, PAGE_EXECUTE_READWRITE, &oldProtectValue);
+
+    memcpy(targetPointer, data, dataSize);
+
+    VirtualProtect(targetPointer, dataSize, oldProtectValue, &oldProtectValue);
+}
+
 //this function is unchecked
 void* getClassFunctionAddress(DWORD* classPtr,int index){
     DWORD** classVtable=(DWORD**)*classPtr;

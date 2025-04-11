@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1744189251 source:f:\resources\code\nebulapatch\hooktools\main.cpp
+1744292636 source:f:\resources\code\nebulapatch\hooktools\main.cpp
 	"hookTool.h"
 
 1744186087 f:\resources\code\nebulapatch\hooktools\main.h
@@ -10,7 +10,7 @@
 	<cstring>
 	<string>
 
-1744286718 f:\resources\code\nebulapatch\hooktools\hooktool.h
+1744291836 f:\resources\code\nebulapatch\hooktools\hooktool.h
 	<windows.h>
 	<cstdint>
 

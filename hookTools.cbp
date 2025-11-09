@@ -39,7 +39,7 @@
 			<Add option="/W3" />
 		</Compiler>
 		<Unit filename="hookTool.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="hookTools.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

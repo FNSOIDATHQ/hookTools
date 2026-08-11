@@ -101,7 +101,6 @@ void writeNopsToAddress(UINT address,UINT dataSize){
     VirtualProtect(targetPointer, dataSize, oldProtectValue, &oldProtectValue);
 }
 
-//this function is unchecked
 void* getClassFunctionAddress(DWORD* classPtr,int index){
     DWORD** classVtable=(DWORD**)*classPtr;
     //std::string msg= "classVtable"+std::to_string((int)classVtable);
